@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Senin İçin</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .gift {
+      width: 150px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .gift:hover {
+      transform: scale(1.1);
+    }
+
+    #flowerSection {
+      display: none;
+      margin-top: 30px;
+    }
+
+    #flowerSection img {
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    #flowerSection p {
+      margin-top: 20px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 15px;
+      color: #444;
+      font-size: 18px;
+      max-width: 90%;
+    }
+
+    .click-text {
+      font-size: 20px;
+      color: #c71585;
+      font-weight: bold;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Senin için küçük bir şeyim var 🌷</h2>
+  <img src="hediye.png" alt="Hediye Kutusu" class="gift" onclick="showFlower()" />
+  <div class="click-text" onclick="showFlower()">Lütfen açar mısın 🥺</div>
+
+  <div id="flowerSection">
+    <img src="cicek.png" alt="Çiçek Buketi" />
+    <p>
+      Doğaya ilham olan güzelliğinin yanında sana bunları vermek beni çok mahçup ediyor.<br>
+      Umarım beğenirsin...<br><br>
+      Sana olan ilk çiçeğimi prensesim 💐<br>
+      Seni çok seviyorum.
+    </p>
+  </div>
+
+  <script>
+    function showFlower() {
+      document.getElementById("flowerSection").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
